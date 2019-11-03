@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+    <script>
+
+    // ***** toUpperCase() & toLowerCase()
+
+    // var city = prompt("Enter city");
+    //
+    //   if(city.toUpperCase() == "KARACHI"){
+    //   document.write("welcome");
+    // }
+    // else{
+    //   document.write("not welcome");
+    // }
+
+
+    // **** Slicing
+    // var khi = "Karachi"
+    //
+    // document.write(khi.slice(0,4));
+
+    // var ar = ["pets","dogs","human being","shahzaib","sheeraz","ASA"]
+    // document.write(ar+"<br />");
+    //
+    // var human = ar.slice(3);
+    // document.write(human);
+
+
+
+    var para = "It is startling to think that, even in the darkest depths of World War II, J. R. R. Tolkien was writing the trilogy, which contains, with the weird applicability available only to poetry and myth, the essential notion that the good gray wizard can understand the evil magi precisely"
+
+    // document.write(para.slice(i, i+13));
+    document.write(para+"<br /><br />");
+
+    for (var i = 0; i < para.length; i++) {
+        if(para.slice(i, i+12) == "World War II"){
+            // document.write("found => " + i);
+            para = para.slice(0,i) + "the second world war" + para.slice(i+12)
+        }
+    }
+
+    document.write(para);
+    </script>
+</body>
+
+</html>
