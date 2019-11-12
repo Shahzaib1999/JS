@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+
+    <script>
+        //  Random number
+
+        // var random = Math.random();
+        // var m = random * 2;
+        // document.write(Math.floor(m));
+        // document.write(random.length);
+
+
+        // convert string into int & float
+
+        // var b = "123.11";
+        // document.write(parseFloat(b))
+        // document.write(Number(b))
+
+        // controlling length
+
+        // var random1 = Math.random();
+        // document.write(random1.toFixed(2)+"<br/>")
+        // document.write(random1.toFixed())
+
+
+        // detting date and time
+
+        var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+        var month = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
+        var date = new Date();
+        document.write(dayNames[date.getDay()] + " " + date.getDate() + " " + month[date.getMonth()] + " " + date.getFullYear()+ "<br />");
+        document.write(date.getTime());
+
+    </script>
+</body>
+
+</html>
